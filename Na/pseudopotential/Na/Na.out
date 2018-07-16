@@ -1,0 +1,169 @@
+
+     Program LD1 v.6.0 (svn rev. 13079) starts on 15Jul2018 at 15:53:56 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Serial version
+     Waiting for input...
+     Reading input from standard input
+     --------------------------- All-electron run ----------------------------
+
+     Na                                                                         
+     dirac relativistic calculation
+
+     atomic number is 11.00
+     dft =PZ   lsd =0 sic =0 latt =0  beta=0.20 tr2=1.0E-14
+     Exchange-correlation      = PZ ( 1  1  0  0 0 0)
+     mesh =1121 r(mesh) =  99.69392 a.u. xmin = -7.00 dx = 0.01250
+     1 Ry =  13.60569193 eV, c = 137.03599966
+
+     n l j   nl                  e(Ry)          e(Ha)          e(eV)
+     Spin orbit split results
+     1 0 0.5 1S 1( 2.00)       -75.5609       -37.7805     -1028.0586
+     2 0 0.5 2S 1( 2.00)        -4.1394        -2.0697       -56.3191
+     2 1 0.5 2P 1( 2.00)        -2.1266        -1.0633       -28.9343
+     2 1 1.5 2P 1( 4.00)        -2.1135        -1.0567       -28.7551
+     3 0 0.5 3S 1( 1.00)        -0.2074        -0.1037        -2.8225
+     3 1 0.5 3P 1( 0.00)        -0.0570        -0.0285        -0.7759
+     3 1 1.5 3P 1( 0.00)        -0.0568        -0.0284        -0.7734
+     Averaged results
+     1 0     1S 1( 2.00)       -75.5609       -37.7805     -1028.0586
+     2 0     2S 1( 2.00)        -4.1394        -2.0697       -56.3191
+     2 1     2P 1( 6.00)        -2.1178        -1.0589       -28.8148
+     3 0     3S 1( 1.00)        -0.2074        -0.1037        -2.8225
+     3 1     3P 1( 0.00)        -0.0569        -0.0285        -0.7742
+
+     final scf error:  6.7E-15 reached in  19 iterations
+ 
+     Etot =    -323.305759 Ry,    -161.652879 Ha,   -4398.798555 eV
+
+     Ekin =     323.109215 Ry,     161.554608 Ha,    4396.124442 eV
+     Encl =    -778.997255 Ry,    -389.498628 Ha,  -10598.796667 eV
+     Eh   =     159.656232 Ry,      79.828116 Ha,    2172.233512 eV
+     Exc  =     -27.073951 Ry,     -13.536976 Ha,    -368.359841 eV
+
+
+     normalization and overlap integrals
+
+     s(1S/1S) =  1.000000  <r> =   0.1436  <r2> =    0.0278  r(max) =   0.0932
+     s(1S/2S) =  0.000000
+     s(1S/3S) = -0.000000
+     s(2S/2S) =  1.000000  <r> =   0.7897  <r2> =    0.7563  r(max) =   0.6078
+     s(2S/3S) =  0.000000
+     s(2P/2P) =  1.000000  <r> =   0.8058  <r2> =    0.8499  r(max) =   0.5364
+     s(2P/3P) =  0.000000
+     s(2P/2P) =  1.000000  <r> =   0.8084  <r2> =    0.8553  r(max) =   0.5431
+     s(2P/3P) = -0.000000
+     s(3S/3S) =  1.000000  <r> =   4.0778  <r2> =   19.6544  r(max) =   3.2450
+     s(3P/3P) =  1.000000  <r> =   6.2302  <r2> =   46.4153  r(max) =   4.9635
+     s(3P/3P) =  1.000000  <r> =   6.2389  <r2> =   46.5405  r(max) =   4.9635
+
+     ------------------------ End of All-electron run ------------------------
+
+
+     --------------------- Generating NC pseudopotential ---------------------
+
+
+      Generating local pot.: lloc=1, j= 0.50, matching radius rcloc =   2.5000
+
+      Generating local pot.: lloc=1, j= 1.50, matching radius rcloc =   2.5000
+
+     Fully relativistic calculation: |psi|^2
+
+     Wfc 3S LC norm =  0.99999036 SC norm =  0.00000803 missing  0.00000161
+
+
+      Wfc   3S  rcut= 2.287  Using Troullier-Martins method 
+
+      The bmat matrix
+     0.00543
+
+     ------------------- End of pseudopotential generation -------------------
+
+     --------------------------- All-electron run ----------------------------
+
+     Na                                                                         
+     dirac relativistic calculation
+
+     atomic number is 11.00
+     dft =PZ   lsd =0 sic =0 latt =0  beta=0.20 tr2=1.0E-14
+     Exchange-correlation      = PZ ( 1  1  0  0 0 0)
+     mesh =1121 r(mesh) =  99.69392 a.u. xmin = -7.00 dx = 0.01250
+     1 Ry =  13.60569193 eV, c = 137.03599966
+
+     n l j   nl                  e(Ry)          e(Ha)          e(eV)
+     Spin orbit split results
+     1 0 0.5 1S 1( 2.00)       -75.5609       -37.7805     -1028.0586
+     2 0 0.5 2S 1( 2.00)        -4.1394        -2.0697       -56.3191
+     2 1 0.5 2P 1( 2.00)        -2.1266        -1.0633       -28.9343
+     2 1 1.5 2P 1( 4.00)        -2.1135        -1.0567       -28.7551
+     3 0 0.5 3S 1( 1.00)        -0.2074        -0.1037        -2.8225
+     3 1 0.5 3P 1( 0.00)        -0.0570        -0.0285        -0.7759
+     3 1 1.5 3P 1( 0.00)        -0.0568        -0.0284        -0.7734
+     Averaged results
+     1 0     1S 1( 2.00)       -75.5609       -37.7805     -1028.0586
+     2 0     2S 1( 2.00)        -4.1394        -2.0697       -56.3191
+     2 1     2P 1( 6.00)        -2.1178        -1.0589       -28.8148
+     3 0     3S 1( 1.00)        -0.2074        -0.1037        -2.8225
+     3 1     3P 1( 0.00)        -0.0569        -0.0285        -0.7742
+
+     final scf error:  6.7E-15 reached in  19 iterations
+ 
+     Etot =    -323.305759 Ry,    -161.652879 Ha,   -4398.798555 eV
+
+     Ekin =     323.109215 Ry,     161.554608 Ha,    4396.124442 eV
+     Encl =    -778.997255 Ry,    -389.498628 Ha,  -10598.796667 eV
+     Eh   =     159.656232 Ry,      79.828116 Ha,    2172.233512 eV
+     Exc  =     -27.073951 Ry,     -13.536976 Ha,    -368.359841 eV
+
+
+     normalization and overlap integrals
+
+     s(1S/1S) =  1.000000  <r> =   0.1436  <r2> =    0.0278  r(max) =   0.0932
+     s(1S/2S) =  0.000000
+     s(1S/3S) = -0.000000
+     s(2S/2S) =  1.000000  <r> =   0.7897  <r2> =    0.7563  r(max) =   0.6078
+     s(2S/3S) =  0.000000
+     s(2P/2P) =  1.000000  <r> =   0.8058  <r2> =    0.8499  r(max) =   0.5364
+     s(2P/3P) =  0.000000
+     s(2P/2P) =  1.000000  <r> =   0.8084  <r2> =    0.8553  r(max) =   0.5431
+     s(2P/3P) = -0.000000
+     s(3S/3S) =  1.000000  <r> =   4.0778  <r2> =   19.6544  r(max) =   3.2450
+     s(3P/3P) =  1.000000  <r> =   6.2302  <r2> =   46.4153  r(max) =   4.9635
+     s(3P/3P) =  1.000000  <r> =   6.2389  <r2> =   46.5405  r(max) =   4.9635
+
+     ------------------------ End of All-electron run ------------------------
+
+
+     ---------------------- Testing the pseudopotential ----------------------
+
+     Na                                                                         
+     dirac relativistic calculation
+
+     atomic number is 11.00   valence charge is  1.00
+     dft =PZ   lsd =0 sic =0 latt =0  beta=0.20 tr2=1.0E-14
+     mesh =1121 r(mesh) =  99.69392 xmin = -7.00 dx = 0.01250
+
+     n l  j  nl             e AE (Ry)       e PS (Ry)    De AE-PS (Ry) 
+     1 0 0.5 3S   1( 1.00)       -0.20745       -0.20745       -0.00000
+     2 1 0.5 3P   1( 0.00)       -0.05703       -0.05690       -0.00012
+     2 1 1.5 3P   1( 0.00)       -0.05684       -0.05690        0.00006
+
+     eps = 3.1E-18  iter =  4
+ 
+     Etot =    -323.305759 Ry,    -161.652879 Ha,   -4398.798555 eV
+     Etotps =    -0.369106 Ry,      -0.184553 Ha,      -5.021948 eV
+
+     Ekin =       0.137149 Ry,       0.068575 Ha,       1.866010 eV
+     Encl =      -0.531897 Ry,      -0.265949 Ha,      -7.236828 eV
+     Ehrt =       0.222108 Ry,       0.111054 Ha,       3.021939 eV
+     Ecxc =      -0.201899 Ry,      -0.100950 Ha,      -2.746978 eV
+     Epseu=       0.005432 Ry,       0.002716 Ha,       0.073909 eV
+
+     ---------------------- End of pseudopotential test ----------------------
+

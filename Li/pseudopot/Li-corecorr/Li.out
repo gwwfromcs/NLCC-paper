@@ -1,0 +1,156 @@
+
+     Program LD1 v.6.0 (svn rev. 13079) starts on 16Jul2018 at 10:45:32 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Serial version
+     Waiting for input...
+     Reading input from standard input
+     --------------------------- All-electron run ----------------------------
+
+     Li                                                                         
+     dirac relativistic calculation
+
+     atomic number is  3.00
+     dft =PZ   lsd =0 sic =0 latt =0  beta=0.20 tr2=1.0E-14
+     Exchange-correlation      = PZ ( 1  1  0  0 0 0)
+     mesh =1017 r(mesh) =  99.62247 a.u. xmin = -7.00 dx = 0.01250
+     1 Ry =  13.60569193 eV, c = 137.03599966
+
+     n l j   nl                  e(Ry)          e(Ha)          e(eV)
+     Spin orbit split results
+     1 0 0.5 1S 1( 2.00)        -3.7559        -1.8779       -51.1012
+     2 0 0.5 2S 1( 1.00)        -0.2114        -0.1057        -2.8768
+     2 1 0.5 2P 1( 0.00)        -0.0829        -0.0415        -1.1283
+     2 1 1.5 2P 1( 0.00)        -0.0829        -0.0415        -1.1282
+     Averaged results
+     1 0     1S 1( 2.00)        -3.7559        -1.8779       -51.1012
+     2 0     2S 1( 1.00)        -0.2114        -0.1057        -2.8768
+     2 1     2P 1( 0.00)        -0.0829        -0.0415        -1.1282
+
+     final scf error:  4.7E-15 reached in  14 iterations
+ 
+     Etot =     -14.669761 Ry,      -7.334880 Ha,    -199.592244 eV
+
+     Ekin =      14.477956 Ry,       7.238978 Ha,     196.982612 eV
+     Encl =     -33.827413 Ry,     -16.913707 Ha,    -460.245367 eV
+     Eh   =       7.982584 Ry,       3.991292 Ha,     108.608579 eV
+     Exc  =      -3.302887 Ry,      -1.651444 Ha,     -44.938067 eV
+
+
+     normalization and overlap integrals
+
+     s(1S/1S) =  1.000000  <r> =   0.5887  <r2> =    0.4764  r(max) =   0.3638
+     s(1S/2S) =  0.000000
+     s(2S/2S) =  1.000000  <r> =   3.9312  <r2> =   18.4427  r(max) =   3.1233
+     s(2P/2P) =  1.000000  <r> =   5.0084  <r2> =   30.9503  r(max) =   3.9114
+     s(2P/2P) =  1.000000  <r> =   5.0087  <r2> =   30.9537  r(max) =   3.9114
+
+     ------------------------ End of All-electron run ------------------------
+
+
+     --------------------- Generating NC pseudopotential ---------------------
+
+
+      Generating local pot.: lloc=0, matching radius rcloc =   2.4500
+
+      Computing core charge for nlcc: 
+
+       r > 1.51 : true rho core
+       r < 1.51 : rho core = a sin(br)/r    a=   0.24  b=   1.79
+
+      Integrated core pseudo-charge :   0.26
+
+     Fully relativistic calculation: |psi|^2
+
+     Wfc 2P LC norm =  0.99999634 SC norm =  0.00000329 missing  0.00000036
+
+     Wfc 2P LC norm =  0.99999634 SC norm =  0.00000109 missing  0.00000257
+
+
+      Wfc   2P  rcut= 2.463  Using Troullier-Martins method 
+
+
+      Wfc   2P  rcut= 2.463  Using Troullier-Martins method 
+
+      The bmat matrix
+    -0.08403     0.00000
+     0.00000    -0.08398
+
+     ------------------- End of pseudopotential generation -------------------
+
+     --------------------------- All-electron run ----------------------------
+
+     Li                                                                         
+     dirac relativistic calculation
+
+     atomic number is  3.00
+     dft =PZ   lsd =0 sic =0 latt =0  beta=0.20 tr2=1.0E-14
+     Exchange-correlation      = PZ ( 1  1  0  0 0 0)
+     mesh =1017 r(mesh) =  99.62247 a.u. xmin = -7.00 dx = 0.01250
+     1 Ry =  13.60569193 eV, c = 137.03599966
+
+     n l j   nl                  e(Ry)          e(Ha)          e(eV)
+     Spin orbit split results
+     1 0 0.5 1S 1( 2.00)        -3.7559        -1.8779       -51.1012
+     2 0 0.5 2S 1( 1.00)        -0.2114        -0.1057        -2.8768
+     2 1 0.5 2P 1( 0.00)        -0.0829        -0.0415        -1.1283
+     2 1 1.5 2P 1( 0.00)        -0.0829        -0.0415        -1.1282
+     Averaged results
+     1 0     1S 1( 2.00)        -3.7559        -1.8779       -51.1012
+     2 0     2S 1( 1.00)        -0.2114        -0.1057        -2.8768
+     2 1     2P 1( 0.00)        -0.0829        -0.0415        -1.1282
+
+     final scf error:  4.7E-15 reached in  14 iterations
+ 
+     Etot =     -14.669761 Ry,      -7.334880 Ha,    -199.592244 eV
+
+     Ekin =      14.477956 Ry,       7.238978 Ha,     196.982612 eV
+     Encl =     -33.827413 Ry,     -16.913707 Ha,    -460.245367 eV
+     Eh   =       7.982584 Ry,       3.991292 Ha,     108.608579 eV
+     Exc  =      -3.302887 Ry,      -1.651444 Ha,     -44.938067 eV
+
+
+     normalization and overlap integrals
+
+     s(1S/1S) =  1.000000  <r> =   0.5887  <r2> =    0.4764  r(max) =   0.3638
+     s(1S/2S) =  0.000000
+     s(2S/2S) =  1.000000  <r> =   3.9312  <r2> =   18.4427  r(max) =   3.1233
+     s(2P/2P) =  1.000000  <r> =   5.0084  <r2> =   30.9503  r(max) =   3.9114
+     s(2P/2P) =  1.000000  <r> =   5.0087  <r2> =   30.9537  r(max) =   3.9114
+
+     ------------------------ End of All-electron run ------------------------
+
+
+     ---------------------- Testing the pseudopotential ----------------------
+
+     Li                                                                         
+     dirac relativistic calculation
+
+     atomic number is  3.00   valence charge is  1.00
+     dft =PZ   lsd =0 sic =0 latt =0  beta=0.20 tr2=1.0E-14
+     mesh =1017 r(mesh) =  99.62247 xmin = -7.00 dx = 0.01250
+
+     n l  j  nl             e AE (Ry)       e PS (Ry)    De AE-PS (Ry) 
+     2 1 0.5 2P   1( 0.00)       -0.08293       -0.08293       -0.00000
+     2 1 1.5 2P   1( 0.00)       -0.08292       -0.08292       -0.00000
+     1 0 0.5 2S   1( 1.00)       -0.21144       -0.21144        0.00000
+
+     eps = 3.5E-15  iter = 11
+ 
+     Etot =     -14.669761 Ry,      -7.334880 Ha,    -199.592244 eV
+     Etotps =    -0.497452 Ry,      -0.248726 Ha,      -6.768181 eV
+
+     Ekin =       0.137862 Ry,       0.068931 Ha,       1.875702 eV
+     Encl =      -0.527422 Ry,      -0.263711 Ha,      -7.175939 eV
+     Ehrt =       0.230425 Ry,       0.115212 Ha,       3.135090 eV
+     Ecxc =      -0.338317 Ry,      -0.169158 Ha,      -4.603034 eV
+     (Ecc =      -0.112564 Ry,      -0.056282 Ha,      -1.531504 eV)
+
+     ---------------------- End of pseudopotential test ----------------------
+

@@ -1,0 +1,11 @@
+#!/bin/bash -l
+#SBATCH -p debug
+#SBATCH -N 1
+#SBATCH -C haswell
+#SBATCH -t 00:30:00
+#SBATCH -L cscratch1
+
+PW_DIR=/global/cscratch1/sd/weiwei/nlcc/qe-6.0-send-to-edison/bin
+
+srun -n 1 $PW_DIR/pw.x < in > scf.out
+
