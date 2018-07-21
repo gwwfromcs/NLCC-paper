@@ -42,8 +42,8 @@ plt.legend(loc='upper right', fontsize='small')
 
 #plt.plot(t, s,'b.',markersize=0.5)
 plt.xlim(100, 1100)
-plt.ylim(-0.4e-8,0.0000002)
+plt.ylim(-0.4e-8,0.000001)
 plt.ticklabel_format(style='sci', axis='y', scilimits=(0,0))
 #plt.show()
 
-plt.savefig("Mn-rhoc-vs-rhov.png",dpi=250)
+plt.savefig("B-rhoc-vs-rhov.png",dpi=250)
