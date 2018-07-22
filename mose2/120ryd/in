@@ -1,0 +1,41 @@
+&control
+calculation     =  'scf'
+restart_mode    =  'from_scratch'
+prefix          =  'mose2'
+tprnfor         =  .true.
+pseudo_dir      =  './'
+outdir          =  './scratch/'
+verbosity       =  'high'
+/
+&system
+ibrav           =   4
+celldm(1)       =   6.2171989498
+celldm(3)       =   8.0
+nat             =   3
+ntyp            =   2
+ecutwfc         =   120.0
+occupations     =  'smearing'
+degauss         =   0.001
+/
+&electrons
+conv_thr        =   1.0d-12
+diagonalization =  'david'
+/
+ATOMIC_SPECIES
+Mo  95.95   Mo.UPF
+Se  78.971  Se.UPF
+
+ATOMIC_POSITIONS {crystal}
+!Mo  1/2    1/2*3^(-1/2)   0
+!Se  1          0         3.29/3.30*0.5
+!Se  1          0        -3.29/3.30*0.5
+
+  Mo 0.6666667  0.3333333  0.0000000  
+  Se 1.0000000  0.0000000  0.0623106  
+  Se 1.0000000  0.0000000 -0.0623106  
+! Mo  0.5000000   0.2886751   0.0000000
+! Se  1.0000000   0.0000000   0.4984848
+! Se  1.0000000   0.0000000  -0.4984848
+K_POINTS {automatic}
+12 12 1 0 0 0
+
