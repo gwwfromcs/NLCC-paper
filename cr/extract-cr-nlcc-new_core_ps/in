@@ -1,0 +1,47 @@
+&control
+   prefix = 'cr'
+   calculation = 'scf'
+   restart_mode = 'from_scratch'
+   wf_collect = .false.
+   tstress = .true.
+   tprnfor = .true.
+   outdir = './'
+   wfcdir = './'
+   pseudo_dir = './'
+   max_seconds = 1700
+/
+&system
+   ibrav = 0
+   celldm(1) = 4.5
+   nat = 1
+   ntyp = 1
+   ecutwfc = 200.0
+   nbnd = 25
+   nspin = 2
+   !starting_magnetization(1) = 0.01
+   !occupations = 'smearing'
+   !smearing = 'gaussian'
+   !degauss = 0.003
+   tot_magnetization = 6.0
+/
+&electrons
+   electron_maxstep = 100
+   conv_thr = 5.0d-6
+   mixing_mode = 'local-TF'
+   mixing_beta = 0.7
+   mixing_ndim = 4
+   diagonalization = 'david'
+   diago_david_ndim = 4
+   diago_full_acc = .true.
+   startingpot='file'
+/
+CELL_PARAMETERS
+   3.500000000   0.000000000   0.000000000
+   0.000000000   3.500000000   0.000000000
+   0.000000000   0.000000000   3.500000000
+ATOMIC_SPECIES
+   Cr 12.0000   Cr.UPF
+ATOMIC_POSITIONS crystal
+Cr        0.500000000   0.500000000   0.500000000
+K_POINTS automatic
+ 2 2 2 0 0 0
