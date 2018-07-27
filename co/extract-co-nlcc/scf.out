@@ -1,0 +1,1133 @@
+
+     Program PWSCF v.6.0 (svn rev. 13079) starts on 26Jul2018 at 22:19: 1 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Serial version
+     Waiting for input...
+     Reading input from standard input
+     Message from routine read_cards :
+     DEPRECATED: no units specified in CELL_PARAMETERS card
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+     Message from routine setup:
+     the system is metallic, specify occupations
+ 
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum       15793   15793   4149              1493013  1493013  200597
+ 
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =       4.5000  a.u.
+     unit-cell volume          =    3906.9844 (a.u.)^3
+     number of atoms/cell      =            1
+     number of atomic types    =            1
+     number of electrons       =         9.00 (up:   6.00, down:   3.00)
+     number of Kohn-Sham states=           25
+     kinetic-energy cutoff     =     200.0000  Ry
+     charge density cutoff     =     800.0000  Ry
+     convergence threshold     =      5.0E-06
+     mixing beta               =       0.7000
+     number of iterations used =            4  local-TF  mixing
+     Exchange-correlation      = PZ ( 1  1  0  0 0 0)
+
+     celldm(1)=   4.500000  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   3.500000   0.000000   0.000000 )  
+               a(2) = (   0.000000   3.500000   0.000000 )  
+               a(3) = (   0.000000   0.000000   3.500000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  0.285714  0.000000  0.000000 )  
+               b(2) = (  0.000000  0.285714  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.285714 )  
+
+
+     PseudoPot. # 1 for Co read from file:
+     ./Co.UPF
+     MD5 check sum: d5aeb338c57019e466c1cbb96a0b6dfc
+     Pseudo is Norm-conserving + core correction, Zval =  9.0
+     Generated using "atomic" code by A. Dal Corso  v.6.0 svn rev. 13079
+     Using radial grid of 1193 points,  2 beta functions with: 
+                l(1) =   1
+                l(2) =   2
+
+     atomic species   valence    mass     pseudopotential
+        Co             9.00    12.00000     Co( 1.00)
+
+     Starting magnetic structure 
+     atomic species   magnetization
+        Co           0.000
+
+     48 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Co  tau(   1) = (   1.7500000   1.7500000   1.7500000  )
+
+     number of k points=     4
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.1250000
+        k(    2) = (   0.0000000   0.0000000  -0.1428571), wk =   0.3750000
+        k(    3) = (   0.0000000  -0.1428571  -0.1428571), wk =   0.3750000
+        k(    4) = (  -0.1428571  -0.1428571  -0.1428571), wk =   0.1250000
+
+     Dense  grid:  1493013 G-vectors     FFT dimensions: ( 141, 141, 141)
+
+     Estimated max dynamical RAM per process >    2288.50Mb
+     Generating pointlists ...
+     new r_m :   0.4125 (alat units)  1.8563 (a.u.) for type    1
+dfftp%nnr =2803221
+    141    141    141    141    141    141
+SIZE(dfftp%isind) =   19881
+bg(1:3,1):   0.2857  0.0000  0.0000
+bg(1:3,2):   0.0000  0.2857  0.0000
+bg(1:3,3):   0.0000  0.0000  0.2857
+at(1:3,1):   3.5000  0.0000  0.0000
+at(1:3,2):   0.0000  3.5000  0.0000
+at(1:3,3):   0.0000  0.0000  3.5000
+nt =     1 na =    1
+tau(:,na) =    1.75000   1.75000   1.75000
+  k    rho_core(k)
+       1   0.00000E+00
+       2   0.00000E+00
+       3   0.00000E+00
+       4   0.00000E+00
+       5   0.00000E+00
+       6   0.00000E+00
+       7   0.00000E+00
+       8   0.00000E+00
+       9   0.00000E+00
+      10   0.00000E+00
+      11   0.00000E+00
+      12   0.00000E+00
+      13   0.00000E+00
+      14   0.00000E+00
+      15   0.00000E+00
+      16   0.00000E+00
+      17   0.00000E+00
+      18   0.00000E+00
+      19   0.00000E+00
+      20   0.00000E+00
+      21   0.00000E+00
+      22   0.00000E+00
+      23   0.00000E+00
+      24   0.00000E+00
+      25   0.00000E+00
+      26   0.00000E+00
+      27   0.00000E+00
+      28   0.00000E+00
+      29   0.00000E+00
+      30   0.00000E+00
+      31   0.00000E+00
+      32   0.00000E+00
+      33   0.00000E+00
+      34   0.00000E+00
+      35   0.00000E+00
+      36   0.00000E+00
+      37   0.00000E+00
+      38   0.00000E+00
+      39   0.00000E+00
+      40   0.00000E+00
+      41   0.00000E+00
+      42   0.00000E+00
+      43   0.00000E+00
+      44   0.00000E+00
+      45   0.00000E+00
+      46   0.00000E+00
+      47   0.00000E+00
+      48   0.00000E+00
+      49   0.00000E+00
+      50   0.00000E+00
+      51   0.00000E+00
+      52   0.00000E+00
+      53   0.00000E+00
+      54   0.00000E+00
+      55   0.00000E+00
+      56   0.00000E+00
+      57   0.00000E+00
+      58   0.00000E+00
+      59   0.00000E+00
+      60   0.00000E+00
+      61   0.00000E+00
+      62   0.00000E+00
+      63   0.00000E+00
+      64   0.00000E+00
+      65   0.00000E+00
+      66   0.00000E+00
+      67   0.00000E+00
+      68   0.00000E+00
+      69   0.00000E+00
+      70   0.00000E+00
+      71   0.00000E+00
+      72   0.00000E+00
+      73   0.00000E+00
+      74   0.00000E+00
+      75   0.00000E+00
+      76   0.00000E+00
+      77   0.00000E+00
+      78   0.00000E+00
+      79   0.00000E+00
+      80   0.00000E+00
+      81   0.00000E+00
+      82   0.00000E+00
+      83   0.00000E+00
+      84   0.00000E+00
+      85   0.00000E+00
+      86   0.00000E+00
+      87   0.00000E+00
+      88   0.00000E+00
+      89   0.00000E+00
+      90   0.00000E+00
+      91   0.00000E+00
+      92   0.00000E+00
+      93   0.00000E+00
+      94   0.00000E+00
+      95   0.00000E+00
+      96   0.00000E+00
+      97   0.00000E+00
+      98   0.00000E+00
+      99   0.00000E+00
+     100   0.00000E+00
+     101   0.00000E+00
+     102   0.00000E+00
+     103   0.00000E+00
+     104   0.00000E+00
+     105   0.00000E+00
+     106   0.00000E+00
+     107   0.00000E+00
+     108   0.00000E+00
+     109   0.00000E+00
+     110   0.00000E+00
+     111   0.00000E+00
+     112   0.00000E+00
+     113   0.00000E+00
+     114   0.00000E+00
+     115   0.00000E+00
+     116   0.00000E+00
+     117   0.00000E+00
+     118   0.00000E+00
+     119   0.00000E+00
+     120   0.00000E+00
+     121   0.00000E+00
+     122   0.00000E+00
+     123   0.00000E+00
+     124   0.00000E+00
+     125   0.00000E+00
+     126   0.00000E+00
+     127   0.00000E+00
+     128   0.00000E+00
+     129   0.00000E+00
+     130   0.00000E+00
+     131   0.00000E+00
+     132   0.00000E+00
+     133   0.00000E+00
+     134   0.00000E+00
+     135   0.00000E+00
+     136   0.00000E+00
+     137   0.00000E+00
+     138   0.00000E+00
+     139   0.00000E+00
+     140   0.00000E+00
+     141   0.00000E+00
+     142   0.00000E+00
+     143   0.00000E+00
+     144   0.00000E+00
+     145   0.00000E+00
+     146   0.00000E+00
+     147   0.00000E+00
+     148   0.00000E+00
+     149   0.00000E+00
+     150   0.00000E+00
+     151   0.00000E+00
+     152   0.00000E+00
+     153   0.00000E+00
+     154   0.00000E+00
+     155   0.00000E+00
+     156   0.00000E+00
+     157   0.00000E+00
+     158   0.00000E+00
+     159   0.00000E+00
+     160   0.00000E+00
+     161   0.00000E+00
+     162   0.00000E+00
+     163   0.00000E+00
+     164   0.00000E+00
+     165   0.00000E+00
+     166   0.00000E+00
+     167   0.00000E+00
+     168   0.00000E+00
+     169   0.00000E+00
+     170   0.00000E+00
+     171   0.00000E+00
+     172   0.00000E+00
+     173   0.00000E+00
+     174   0.00000E+00
+     175   0.00000E+00
+     176   0.00000E+00
+     177   0.00000E+00
+     178   0.00000E+00
+     179   0.00000E+00
+     180   0.00000E+00
+     181   0.00000E+00
+     182   0.00000E+00
+     183   0.00000E+00
+     184   0.00000E+00
+     185   0.00000E+00
+     186   0.00000E+00
+     187   0.00000E+00
+     188   0.00000E+00
+     189   0.00000E+00
+     190   0.00000E+00
+     191   0.00000E+00
+     192   0.00000E+00
+     193   0.00000E+00
+     194   0.00000E+00
+     195   0.00000E+00
+     196   0.00000E+00
+     197   0.00000E+00
+     198   0.00000E+00
+     199   0.00000E+00
+     200   0.00000E+00
+     201   0.00000E+00
+     202   0.00000E+00
+     203   0.00000E+00
+     204   0.00000E+00
+     205   0.00000E+00
+     206   0.00000E+00
+     207   0.00000E+00
+     208   0.00000E+00
+     209   0.00000E+00
+     210   0.00000E+00
+     211   0.00000E+00
+     212   0.00000E+00
+     213   0.00000E+00
+     214   0.00000E+00
+     215   0.00000E+00
+     216   0.00000E+00
+     217   0.00000E+00
+     218   0.00000E+00
+     219   0.00000E+00
+     220   0.00000E+00
+     221   0.00000E+00
+     222   0.00000E+00
+     223   0.00000E+00
+     224   0.00000E+00
+     225   0.00000E+00
+     226   0.00000E+00
+     227   0.00000E+00
+     228   0.00000E+00
+     229   0.00000E+00
+     230   0.00000E+00
+     231   0.00000E+00
+     232   0.00000E+00
+     233   0.00000E+00
+     234   0.00000E+00
+     235   0.00000E+00
+     236   0.00000E+00
+     237   0.00000E+00
+     238   0.00000E+00
+     239   0.00000E+00
+     240   0.00000E+00
+     241   0.00000E+00
+     242   0.00000E+00
+     243   0.00000E+00
+     244   0.00000E+00
+     245   0.00000E+00
+     246   0.00000E+00
+     247   0.00000E+00
+     248   0.00000E+00
+     249   0.00000E+00
+     250   0.00000E+00
+     251   0.00000E+00
+     252   0.00000E+00
+     253   0.00000E+00
+     254   0.00000E+00
+     255   0.00000E+00
+     256   0.00000E+00
+     257   0.00000E+00
+     258   0.00000E+00
+     259   0.00000E+00
+     260   0.00000E+00
+     261   0.00000E+00
+     262   0.00000E+00
+     263   0.00000E+00
+     264   0.00000E+00
+     265   0.00000E+00
+     266   0.00000E+00
+     267   0.00000E+00
+     268   0.00000E+00
+     269   0.00000E+00
+     270   0.00000E+00
+     271   0.00000E+00
+     272   0.00000E+00
+     273   0.00000E+00
+     274   0.00000E+00
+     275   0.00000E+00
+     276   0.00000E+00
+     277   0.00000E+00
+     278   0.00000E+00
+     279   0.00000E+00
+     280   0.00000E+00
+     281   0.00000E+00
+     282   0.00000E+00
+     283   0.00000E+00
+     284   0.00000E+00
+     285   0.00000E+00
+     286   0.00000E+00
+     287   0.00000E+00
+     288   0.00000E+00
+     289   0.00000E+00
+     290   0.00000E+00
+     291   0.00000E+00
+     292   0.00000E+00
+     293   0.00000E+00
+     294   0.00000E+00
+     295   0.00000E+00
+     296   0.00000E+00
+     297   0.00000E+00
+     298   0.00000E+00
+     299   0.00000E+00
+     300   0.00000E+00
+  ------------ 
+  k    averhoc
+           1  1.629409600438535E-016
+           2  1.839765472871778E-016
+           3  2.524849222333603E-016
+           4  3.861396530832298E-016
+           5  6.190405426706639E-016
+           6  1.010893395728870E-015
+           7  1.664698275183887E-015
+           8  2.749977212295236E-015
+           9  4.545277807083387E-015
+          10  7.509405533740303E-015
+          11  1.242857824865484E-014
+          12  2.056817438946488E-014
+          13  3.400691412931327E-014
+          14  5.631242439992380E-014
+          15  9.320133072937266E-014
+          16  1.542668014480372E-013
+          17  2.555447820682052E-013
+          18  4.230024451055857E-013
+          19  7.009851395138510E-013
+          20  1.160802867526465E-012
+          21  1.924225965439117E-012
+          22  3.188573204426656E-012
+          23  5.284306196137151E-012
+          24  8.765619873379467E-012
+          25  1.453447830025807E-011
+          26  2.410469577059653E-011
+          27  3.999415794564676E-011
+          28  6.638918330665908E-011
+          29  1.102157260371515E-010
+          30  1.829850879612827E-010
+          31  3.039402365351148E-010
+          32  5.050073653596360E-010
+          33  8.392820899510439E-010
+          34  1.395525208164227E-009
+          35  2.320984161382088E-009
+          36  3.861414712587603E-009
+          37  6.426927423306540E-009
+          38  1.070457534669245E-008
+          39  1.783166214214103E-008
+          40  2.972957558629309E-008
+          41  4.957465113918950E-008
+          42  8.273669188344358E-008
+          43  1.381789677755991E-007
+          44  2.308353192451368E-007
+          45  3.860130465320068E-007
+          46  6.457528735340697E-007
+          47  1.081076933418981E-006
+          48  1.811524316665280E-006
+          49  3.037626314683368E-006
+          50  5.097563927634557E-006
+          51  8.558952205922704E-006
+          52  1.438033779017468E-005
+          53  2.417685739049893E-005
+          54  4.065976207338001E-005
+          55  6.838089878880123E-005
+          56  1.149484347853984E-004
+          57  1.930734024545285E-004
+          58  3.236873476290839E-004
+          59  5.410825890321793E-004
+          60  9.001849216966413E-004
+          61  1.486687581980271E-003
+          62  2.428210545417025E-003
+          63  3.900883012148957E-003
+          64  6.114417705699749E-003
+          65  9.238781345592953E-003
+          66  1.323874526093816E-002
+          67  1.773249218378107E-002
+          68  2.268572426205436E-002
+          69  2.822460799496400E-002
+          70  3.298802965180647E-002
+          71  3.574969753695430E-002
+          72  3.574969753695430E-002
+          73  3.298802965180647E-002
+          74  2.822460799496400E-002
+          75  2.268572426205436E-002
+          76  1.773249218378107E-002
+          77  1.323874526093816E-002
+          78  9.238781345592953E-003
+          79  6.114417705699749E-003
+          80  3.900883012148957E-003
+          81  2.428210545417025E-003
+          82  1.486687581980276E-003
+          83  9.001849216966413E-004
+          84  5.410825890321793E-004
+          85  3.236873476290825E-004
+          86  1.930734024545273E-004
+          87  1.149484347853991E-004
+          88  6.838089878880123E-005
+          89  4.065976207338001E-005
+          90  2.417685739049885E-005
+          91  1.438033779017475E-005
+          92  8.558952205922757E-006
+          93  5.097563927634557E-006
+          94  3.037626314683368E-006
+          95  1.811524316665273E-006
+          96  1.081076933418985E-006
+          97  6.457528735340726E-007
+          98  3.860130465320068E-007
+          99  2.308353192451368E-007
+         100  1.381789677755984E-007
+         101  8.273669188344406E-008
+         102  4.957465113918962E-008
+         103  2.972957558629309E-008
+         104  1.783166214214097E-008
+         105  1.070457534669238E-008
+         106  6.426927423306569E-009
+         107  3.861414712587619E-009
+         108  2.320984161382088E-009
+         109  1.395525208164223E-009
+         110  8.392820899510394E-010
+         111  5.050073653596381E-010
+         112  3.039402365351148E-010
+         113  1.829850879612827E-010
+         114  1.102157260371515E-010
+         115  6.638918330665890E-011
+         116  3.999415794564676E-011
+         117  2.410469577059653E-011
+         118  1.453447830025807E-011
+         119  8.765619873379467E-012
+         120  5.284306196137127E-012
+         121  3.188573204426656E-012
+         122  1.924225965439117E-012
+         123  1.160802867526465E-012
+         124  7.009851395138510E-013
+         125  4.230024451055873E-013
+         126  2.555447820682052E-013
+         127  1.542668014480372E-013
+         128  9.320133072937266E-014
+         129  5.631242439992364E-014
+         130  3.400691412931332E-014
+         131  2.056817438946488E-014
+         132  1.242857824865484E-014
+         133  7.509405533740303E-015
+         134  4.545277807083370E-015
+         135  2.749977212295253E-015
+         136  1.664698275183887E-015
+         137  1.010893395728870E-015
+         138  6.190405426706639E-016
+         139  3.861396530832272E-016
+         140  2.524849222333606E-016
+         141  1.839765472871778E-016
+  ------------ 
+  k    rhog_core(k)
+       1   0.24969E-02   0.00000E+00
+       2  -0.24539E-02   0.48824E-19
+       3  -0.24539E-02   0.26122E-19
+       4  -0.24539E-02  -0.14501E-19
+       5  -0.24539E-02  -0.88195E-19
+       6  -0.24539E-02  -0.86239E-19
+       7  -0.24539E-02  -0.88281E-19
+       8   0.24118E-02  -0.99658E-19
+       9   0.24118E-02  -0.13903E-18
+      10   0.24118E-02   0.37281E-19
+      11   0.24118E-02   0.40776E-19
+      12   0.24118E-02  -0.66473E-19
+      13   0.24118E-02   0.58922E-19
+      14   0.24118E-02   0.31792E-19
+      15   0.24118E-02   0.18149E-18
+      16   0.24118E-02   0.54362E-19
+      17   0.24118E-02   0.43157E-19
+      18   0.24118E-02   0.15476E-18
+      19   0.24118E-02   0.16908E-18
+      20  -0.23706E-02   0.16070E-18
+      21  -0.23706E-02   0.13025E-19
+      22  -0.23706E-02   0.13281E-19
+      23  -0.23706E-02  -0.12435E-18
+      24  -0.23706E-02  -0.26761E-19
+      25  -0.23706E-02  -0.13900E-18
+      26  -0.23706E-02  -0.18067E-18
+      27  -0.23706E-02  -0.25560E-18
+      28   0.23302E-02   0.11289E-18
+      29   0.23302E-02   0.99248E-19
+      30   0.23302E-02   0.16706E-18
+      31   0.23302E-02  -0.37501E-19
+      32   0.23302E-02  -0.34829E-19
+      33   0.23302E-02  -0.26866E-19
+      34  -0.22906E-02  -0.71268E-19
+      35  -0.22906E-02  -0.41692E-19
+      36  -0.22906E-02  -0.18861E-18
+      37  -0.22906E-02  -0.19779E-18
+      38  -0.22906E-02  -0.32592E-19
+      39  -0.22906E-02  -0.55221E-19
+      40  -0.22906E-02   0.75481E-19
+      41  -0.22906E-02   0.87540E-19
+      42  -0.22906E-02  -0.39615E-19
+      43  -0.22906E-02  -0.18266E-18
+      44  -0.22906E-02   0.14343E-19
+      45  -0.22906E-02   0.48069E-19
+      46  -0.22906E-02  -0.12362E-18
+      47  -0.22906E-02  -0.36540E-19
+      48  -0.22906E-02   0.77731E-19
+      49  -0.22906E-02  -0.44923E-19
+      50  -0.22906E-02  -0.18122E-18
+      51  -0.22906E-02  -0.12495E-18
+      52  -0.22906E-02  -0.44448E-19
+      53  -0.22906E-02  -0.46948E-19
+      54  -0.22906E-02   0.52520E-19
+      55  -0.22906E-02   0.75565E-19
+      56  -0.22906E-02  -0.55656E-19
+      57  -0.22906E-02  -0.58044E-19
+      58   0.22518E-02   0.75475E-19
+      59   0.22518E-02   0.16105E-18
+      60   0.22518E-02   0.12015E-18
+      61   0.22518E-02   0.28080E-18
+      62   0.22518E-02   0.48248E-19
+      63   0.22518E-02   0.12325E-18
+      64   0.22518E-02   0.44506E-19
+      65   0.22518E-02  -0.13241E-18
+      66   0.22518E-02   0.13862E-18
+      67   0.22518E-02  -0.83615E-20
+      68   0.22518E-02  -0.14680E-18
+      69   0.22518E-02  -0.30012E-21
+      70   0.22518E-02   0.12376E-18
+      71   0.22518E-02   0.27824E-18
+      72   0.22518E-02   0.10842E-18
+      73   0.22518E-02   0.11247E-19
+      74   0.22518E-02   0.22099E-18
+      75   0.22518E-02   0.11971E-18
+      76   0.22518E-02   0.78783E-19
+      77   0.22518E-02   0.14535E-18
+      78   0.22518E-02  -0.69615E-19
+      79   0.22518E-02   0.41118E-19
+      80   0.22518E-02   0.70661E-19
+      81   0.22518E-02   0.15115E-18
+      82   0.21765E-02   0.18577E-18
+      83   0.21765E-02   0.16235E-18
+      84   0.21765E-02   0.11348E-18
+      85   0.21765E-02   0.77125E-19
+      86   0.21765E-02   0.16459E-18
+      87   0.21765E-02   0.82478E-19
+      88   0.21765E-02   0.44799E-19
+      89   0.21765E-02  -0.31439E-19
+      90   0.21765E-02   0.48400E-19
+      91   0.21765E-02   0.52822E-19
+      92   0.21765E-02  -0.11323E-19
+      93   0.21765E-02  -0.45767E-19
+      94  -0.21399E-02   0.49318E-19
+      95  -0.21399E-02  -0.12232E-18
+      96  -0.21399E-02  -0.26993E-18
+      97  -0.21399E-02  -0.12572E-18
+      98  -0.21399E-02  -0.35951E-19
+      99  -0.21399E-02  -0.23931E-18
+     100  -0.21399E-02  -0.15819E-18
+ 1492913  -0.32549E-06   0.42776E-21
+ 1492914  -0.32549E-06   0.36114E-20
+ 1492915  -0.32549E-06   0.10389E-20
+ 1492916  -0.32549E-06  -0.11906E-20
+ 1492917  -0.32549E-06  -0.77473E-21
+ 1492918  -0.22206E-06  -0.38172E-22
+ 1492919  -0.22206E-06   0.10363E-21
+ 1492920  -0.22206E-06  -0.10619E-20
+ 1492921  -0.22206E-06  -0.39790E-20
+ 1492922  -0.22206E-06  -0.11421E-20
+ 1492923  -0.22206E-06  -0.41097E-20
+ 1492924  -0.22206E-06  -0.22492E-20
+ 1492925  -0.22206E-06  -0.20691E-20
+ 1492926  -0.65293E-06  -0.31198E-20
+ 1492927  -0.65293E-06  -0.28725E-20
+ 1492928  -0.65293E-06   0.48367E-22
+ 1492929  -0.65293E-06  -0.32130E-21
+ 1492930  -0.65293E-06  -0.56936E-21
+ 1492931  -0.65293E-06  -0.88899E-21
+ 1492932  -0.65293E-06  -0.39613E-20
+ 1492933  -0.65293E-06  -0.37044E-20
+ 1492934  -0.29484E-06  -0.26644E-20
+ 1492935  -0.29484E-06  -0.32730E-21
+ 1492936  -0.29484E-06   0.32595E-20
+ 1492937  -0.29484E-06   0.32934E-20
+ 1492938  -0.29484E-06   0.51002E-20
+ 1492939  -0.29484E-06   0.49739E-20
+ 1492940  -0.29484E-06  -0.33741E-20
+ 1492941  -0.29484E-06  -0.11049E-20
+ 1492942  -0.29484E-06  -0.28922E-20
+ 1492943  -0.29484E-06  -0.72241E-21
+ 1492944  -0.22206E-06  -0.24025E-20
+ 1492945  -0.22206E-06  -0.22794E-20
+ 1492946  -0.32549E-06  -0.17716E-20
+ 1492947  -0.32549E-06  -0.16608E-20
+ 1492948  -0.32549E-06  -0.20462E-20
+ 1492949  -0.32549E-06  -0.13736E-20
+ 1492950  -0.22206E-06  -0.25960E-20
+ 1492951  -0.22206E-06  -0.13553E-20
+ 1492952  -0.29484E-06   0.22905E-20
+ 1492953  -0.29484E-06   0.22422E-20
+ 1492954  -0.29484E-06   0.31042E-20
+ 1492955  -0.29484E-06   0.31611E-20
+ 1492956  -0.22206E-06  -0.23243E-20
+ 1492957  -0.22206E-06  -0.11356E-20
+ 1492958  -0.32549E-06  -0.28235E-20
+ 1492959  -0.32549E-06  -0.21548E-20
+ 1492960  -0.32549E-06  -0.45733E-21
+ 1492961  -0.32549E-06  -0.33111E-21
+ 1492962  -0.22206E-06  -0.10380E-20
+ 1492963  -0.22206E-06  -0.96659E-21
+ 1492964  -0.29484E-06  -0.32307E-20
+ 1492965  -0.29484E-06  -0.10797E-20
+ 1492966  -0.65609E-06   0.15478E-20
+ 1492967  -0.65609E-06   0.13157E-20
+ 1492968  -0.65609E-06   0.50836E-20
+ 1492969  -0.65609E-06   0.43611E-20
+ 1492970  -0.65609E-06   0.43304E-20
+ 1492971  -0.65609E-06   0.37655E-20
+ 1492972  -0.65609E-06   0.86378E-21
+ 1492973  -0.65609E-06   0.53968E-21
+ 1492974  -0.86865E-06   0.34176E-20
+ 1492975  -0.86865E-06   0.26774E-20
+ 1492976  -0.85393E-06   0.46685E-20
+ 1492977  -0.85393E-06   0.51788E-20
+ 1492978  -0.85393E-06   0.52442E-20
+ 1492979  -0.85393E-06   0.53605E-20
+ 1492980  -0.86865E-06   0.35459E-20
+ 1492981  -0.86865E-06   0.40872E-20
+ 1492982  -0.86865E-06   0.19850E-20
+ 1492983  -0.86865E-06   0.24727E-20
+ 1492984  -0.85393E-06   0.54789E-20
+ 1492985  -0.85393E-06   0.56568E-20
+ 1492986  -0.85393E-06   0.46730E-20
+ 1492987  -0.85393E-06   0.51843E-20
+ 1492988  -0.86865E-06   0.44944E-20
+ 1492989  -0.86865E-06   0.38398E-20
+ 1492990  -0.46345E-06   0.11224E-20
+ 1492991  -0.46345E-06   0.86115E-21
+ 1492992  -0.46345E-06   0.15119E-20
+ 1492993  -0.46345E-06   0.21704E-20
+ 1492994  -0.46345E-06   0.15174E-20
+ 1492995  -0.46345E-06   0.21515E-20
+ 1492996  -0.46345E-06   0.19139E-20
+ 1492997  -0.46345E-06   0.15367E-20
+ 1492998   0.23655E-07  -0.26640E-21
+ 1492999   0.23655E-07  -0.32539E-21
+ 1493000   0.29461E-07   0.63382E-21
+ 1493001   0.29461E-07   0.67216E-21
+ 1493002   0.29461E-07   0.81845E-21
+ 1493003   0.29461E-07   0.86997E-21
+ 1493004   0.23655E-07   0.45057E-21
+ 1493005   0.23655E-07   0.67322E-21
+ 1493006   0.23655E-07   0.36488E-21
+ 1493007   0.23655E-07   0.57546E-21
+ 1493008   0.29461E-07   0.86687E-21
+ 1493009   0.29461E-07   0.92565E-21
+ 1493010   0.29461E-07   0.74328E-21
+ 1493011   0.29461E-07   0.74982E-21
+ 1493012   0.23655E-07  -0.36216E-21
+ 1493013   0.23655E-07  -0.42906E-21
+  ------------ 
+
+     Initial potential from superposition of free atoms
+
+     starting charge    8.99978, renormalised to    9.00000
+
+     negative rho (up, down):  9.369E-06 9.369E-06
+     Starting wfc are    9 randomized atomic wfcs +   16 random wfc
+
+     total cpu time spent up to now is      148.9 secs
+
+     per-process dynamical memory:  1440.5 Mb
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-02,  avg # of iterations =  9.2
+
+     negative rho (up, down):  1.198E-05 2.879E-05
+
+     total cpu time spent up to now is      972.8 secs
+
+     total energy              =     -73.09539934 Ry
+     Harris-Foulkes estimate   =     -73.13071664 Ry
+     estimated scf accuracy    <       0.42623318 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.00 Bohr mag/cell
+
+     iteration #  2     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  4.74E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  0.000E+00 1.679E-05
+
+     total cpu time spent up to now is     1223.2 secs
+
+     total energy              =     -73.09602353 Ry
+     Harris-Foulkes estimate   =     -73.11657526 Ry
+     estimated scf accuracy    <       0.06875796 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.00 Bohr mag/cell
+
+     iteration #  3     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  3.2
+
+     negative rho (up, down):  0.000E+00 7.559E-06
+
+     total cpu time spent up to now is     1511.3 secs
+
+     total energy              =     -73.14058950 Ry
+     Harris-Foulkes estimate   =     -73.16374394 Ry
+     estimated scf accuracy    <       0.29351994 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.07 Bohr mag/cell
+
+     iteration #  4     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.4
+
+     negative rho (up, down):  1.673E-06 3.455E-04
+
+     total cpu time spent up to now is     2288.9 secs
+
+     total energy              =     -73.06933267 Ry
+     Harris-Foulkes estimate   =     -73.14210596 Ry
+     estimated scf accuracy    <       0.21407756 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.07 Bohr mag/cell
+
+     iteration #  5     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  2.5
+
+     total cpu time spent up to now is     2579.4 secs
+
+     total energy              =     -73.13032165 Ry
+     Harris-Foulkes estimate   =     -73.15214708 Ry
+     estimated scf accuracy    <       0.22499288 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.00 Bohr mag/cell
+
+     iteration #  6     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is     2822.9 secs
+
+     total energy              =     -73.13395905 Ry
+     Harris-Foulkes estimate   =     -73.13346923 Ry
+     estimated scf accuracy    <       0.12054970 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.00 Bohr mag/cell
+
+     iteration #  7     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is     3066.8 secs
+
+     total energy              =     -73.13900304 Ry
+     Harris-Foulkes estimate   =     -73.13400294 Ry
+     estimated scf accuracy    <       0.12223548 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.00 Bohr mag/cell
+
+     iteration #  8     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is     3309.4 secs
+
+     total energy              =     -73.10865871 Ry
+     Harris-Foulkes estimate   =     -73.13913170 Ry
+     estimated scf accuracy    <       0.13990299 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.00 Bohr mag/cell
+
+     iteration #  9     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is     3554.7 secs
+
+     total energy              =     -73.10811195 Ry
+     Harris-Foulkes estimate   =     -73.12776412 Ry
+     estimated scf accuracy    <       0.12354921 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.07 Bohr mag/cell
+
+     iteration # 10     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is     3801.2 secs
+
+     total energy              =     -73.12461625 Ry
+     Harris-Foulkes estimate   =     -73.13010930 Ry
+     estimated scf accuracy    <       0.10456019 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.00 Bohr mag/cell
+
+     iteration # 11     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is     4045.4 secs
+
+     total energy              =     -73.12614765 Ry
+     Harris-Foulkes estimate   =     -73.12487625 Ry
+     estimated scf accuracy    <       0.08555722 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.00 Bohr mag/cell
+
+     iteration # 12     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is     4290.7 secs
+
+     total energy              =     -73.13069631 Ry
+     Harris-Foulkes estimate   =     -73.12616427 Ry
+     estimated scf accuracy    <       0.08944790 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.00 Bohr mag/cell
+
+     iteration # 13     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is     4537.5 secs
+
+     total energy              =     -73.12096285 Ry
+     Harris-Foulkes estimate   =     -73.13090667 Ry
+     estimated scf accuracy    <       0.10925940 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.00 Bohr mag/cell
+
+     iteration # 14     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is     4787.3 secs
+
+     total energy              =     -73.09055383 Ry
+     Harris-Foulkes estimate   =     -73.12173926 Ry
+     estimated scf accuracy    <       0.07309069 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.00 Bohr mag/cell
+
+     iteration # 15     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.5
+
+     total cpu time spent up to now is     5044.5 secs
+
+     total energy              =     -73.11074184 Ry
+     Harris-Foulkes estimate   =     -73.16749197 Ry
+     estimated scf accuracy    <       0.30476858 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.06 Bohr mag/cell
+
+     iteration # 16     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.5
+
+     total cpu time spent up to now is     5304.4 secs
+
+     total energy              =     -73.10235126 Ry
+     Harris-Foulkes estimate   =     -73.12255230 Ry
+     estimated scf accuracy    <       0.10632829 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.07 Bohr mag/cell
+
+     iteration # 17     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is     5560.0 secs
+
+     total energy              =     -73.12617212 Ry
+     Harris-Foulkes estimate   =     -73.13795100 Ry
+     estimated scf accuracy    <       0.13671207 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.00 Bohr mag/cell
+
+     iteration # 18     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is     5812.0 secs
+
+     total energy              =     -73.12391990 Ry
+     Harris-Foulkes estimate   =     -73.12702283 Ry
+     estimated scf accuracy    <       0.09430523 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.00 Bohr mag/cell
+
+     iteration # 19     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is     6061.6 secs
+
+     total energy              =     -73.11128391 Ry
+     Harris-Foulkes estimate   =     -73.12403601 Ry
+     estimated scf accuracy    <       0.08200463 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.00 Bohr mag/cell
+
+     iteration # 20     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is     6315.8 secs
+
+     total energy              =     -73.12540251 Ry
+     Harris-Foulkes estimate   =     -73.13015941 Ry
+     estimated scf accuracy    <       0.13448394 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.07 Bohr mag/cell
+
+     iteration # 21     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is     6570.6 secs
+
+     total energy              =     -73.11358599 Ry
+     Harris-Foulkes estimate   =     -73.12560139 Ry
+     estimated scf accuracy    <       0.11495317 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.07 Bohr mag/cell
+
+     iteration # 22     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is     6825.4 secs
+
+     total energy              =     -73.11846630 Ry
+     Harris-Foulkes estimate   =     -73.12542267 Ry
+     estimated scf accuracy    <       0.08825813 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.00 Bohr mag/cell
+
+     iteration # 23     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  7.64E-04,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is     7393.0 secs
+
+     total energy              =     -73.10893430 Ry
+     Harris-Foulkes estimate   =     -73.12156148 Ry
+     estimated scf accuracy    <       0.09629433 Ry
+
+     total magnetization       =     3.00 Bohr mag/cell
+     absolute magnetization    =     3.07 Bohr mag/cell
+
+     iteration # 24     ecut=   200.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+
+     Maximum CPU time exceeded
+
+     max_seconds     =    7400.00
+     elapsed seconds =    7412.05
+     Calculation stopped in k-point loop, point #     1
+     Calculation stopped in scf loop at iteration #    23
+
+     Writing output data file Co.save
+ 
+     init_run     :    102.77s CPU    147.09s WALL (       1 calls)
+     electrons    :   6717.35s CPU   7266.51s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :     80.66s CPU     81.99s WALL (       1 calls)
+     potinit      :      1.46s CPU      1.63s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :   4095.51s CPU   4166.41s WALL (      24 calls)
+     sum_band     :    974.82s CPU   1439.87s WALL (      23 calls)
+     v_of_rho     :     13.45s CPU     14.43s WALL (      24 calls)
+     mix_rho      :   1632.92s CPU   1647.01s WALL (      23 calls)
+
+     Called by c_bands:
+     init_us_2    :      9.71s CPU     18.40s WALL (     377 calls)
+     cegterg      :   4077.94s CPU   4138.19s WALL (     185 calls)
+
+     Called by sum_band:
+
+     Called by *egterg:
+     h_psi        :   4037.18s CPU   4038.24s WALL (     485 calls)
+     g_psi        :      6.32s CPU      6.38s WALL (     292 calls)
+     cdiaghg      :      0.44s CPU      0.63s WALL (     477 calls)
+
+     Called by h_psi:
+     h_psi:pot    :   4027.98s CPU   4028.71s WALL (     485 calls)
+     h_psi:calbec :      7.22s CPU      7.36s WALL (     485 calls)
+     vloc_psi     :   4006.93s CPU   4007.46s WALL (     485 calls)
+     add_vuspsi   :     13.83s CPU     13.84s WALL (     485 calls)
+
+     General routines
+     calbec       :      7.22s CPU      7.33s WALL (     485 calls)
+     fft          :     30.82s CPU     30.89s WALL (     168 calls)
+     ffts         :   1150.97s CPU   1151.06s WALL (    6265 calls)
+     fftw         :   4715.78s CPU   4716.15s WALL (   25724 calls)
+     davcio       :      0.01s CPU      1.66s WALL (      18 calls)
+ 
+ 
+     PWSCF        :     1h53m CPU        2h 3m WALL
+
+ 
+   This run was terminated on:   0:22:39  27Jul2018            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
